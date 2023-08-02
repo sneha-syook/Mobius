@@ -34,7 +34,7 @@ global.usecsebase           = 'Mobius';
 global.usecseid             = '/Mobius2';
 global.usecsebaseport       = conf.csebaseport;
 
-global.usedbhost            = 'localhost';
+global.usedbhost            = conf.dbhost;
 global.usedbpass            = conf.dbpass;
 
 
@@ -47,10 +47,10 @@ global.use_hit_man_port     = '7594';
 
 global.usetsagentport       = '7582';
 
-global.use_mqtt_broker      = 'localhost'; // mqttbroker for mobius
+global.use_mqtt_broker      = conf.mqtthost; // mqttbroker for mobius
 
 global.use_secure           = 'disable';
-global.use_mqtt_port        = '1883';
+global.use_mqtt_port        = conf.mqttport;
 if(use_secure === 'enable') {
     use_mqtt_port           = '8883';
 }
